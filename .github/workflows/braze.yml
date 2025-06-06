@@ -20,8 +20,11 @@ on:
       - '.github/actions/**'
       - '.github/workflows/braze.yml'
       - '.github/workflows/reuse-*.yml'
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
 jobs:
-
   infrastructure:
     uses: ./.github/workflows/reuse-infrastructure.yml
     with:

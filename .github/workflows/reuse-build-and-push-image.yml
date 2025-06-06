@@ -14,7 +14,7 @@ on:
       development-aws-registry:
         description: 'AWS Development Account Id'
         type: string
-        default: 410318598490.dkr.ecr.us-east-1.amazonaws.com
+        default: 528782700771.dkr.ecr.us-east-1.amazonaws.com
       production-aws-registry:
         description: 'AWS Development Account Id'
         type: string

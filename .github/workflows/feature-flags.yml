@@ -24,6 +24,10 @@ on:
       - '.github/actions/**'
       - '.github/workflows/feature-flags.yml'
       - '.github/workflows/reuse-*.yml'
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
 jobs:
   apollo:
     uses: ./.github/workflows/reuse-apollo-federation.yml

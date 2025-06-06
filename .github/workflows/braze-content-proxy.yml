@@ -24,6 +24,10 @@ on:
       - '.github/actions/**'
       - '.github/workflows/braze-content-proxy.yml'
       - '.github/workflows/reuse-*.yml'    
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
 jobs:
   test-integrations:
     if: github.event_name == 'pull_request'
