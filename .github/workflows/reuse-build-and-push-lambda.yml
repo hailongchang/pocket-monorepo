@@ -70,7 +70,7 @@ jobs:
           uses: aws-actions/configure-aws-credentials@v4
           with:
             aws-region: us-east-1
-            role-to-assume: arn:aws:iam::528782700771:oidc-provider/token.actions.githubusercontent.com
+            role-to-assume: arn:aws:iam::528782700771:role/GitHub_Actions
         - name: Build Lambda
           uses: pocket/pocket-monorepo/.github/actions/build-lambda@main
           with:
@@ -99,7 +99,7 @@ jobs:
           uses: aws-actions/configure-aws-credentials@v4
           with:
             aws-region: us-east-1
-            role-to-assume: arn:aws:iam::528782700771:oidc-provider/token.actions.githubusercontent.com
+            role-to-assume: arn:aws:iam::528782700771:role/GitHub_Actions
         - name: Build Lambda
           uses: pocket/pocket-monorepo/.github/actions/build-lambda@main
           with:
