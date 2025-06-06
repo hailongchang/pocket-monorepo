@@ -40,7 +40,7 @@ on:
 permissions:
   contents: read  # This is required for actions/checkout
   id-token: write  # Access the Github JWT for AWS access
-        
+  deployments: write
 
 jobs:
     # Let's build the image on every pull request just like we would on production
