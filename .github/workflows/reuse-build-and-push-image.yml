@@ -106,7 +106,7 @@ jobs:
           uses: aws-actions/configure-aws-credentials@v4
           with:
             aws-region: us-east-1
-            role-to-assume: arn:aws:iam::410318598490:role/PocketGHARole
+            role-to-assume: arn:aws:iam::528782700771:oidc-provider/token.actions.githubusercontent.com
         - name: Build and Push Development Docker Image
           id: dev-docker-build
           uses: pocket/pocket-monorepo/.github/actions/containerize@main
@@ -146,7 +146,7 @@ jobs:
           uses: aws-actions/configure-aws-credentials@v4
           with:
             aws-region: us-east-1
-            role-to-assume: arn:aws:iam::996905175585:role/PocketGHARole
+            role-to-assume: arn:aws:iam::528782700771:oidc-provider/token.actions.githubusercontent.com
         - name: Build and Push Production Docker Image
           id: prod-docker-build
           uses: pocket/pocket-monorepo/.github/actions/containerize@main
