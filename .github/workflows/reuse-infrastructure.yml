@@ -24,7 +24,7 @@ permissions:
   pull-requests: write   # Allow Terraform Comment to write to PRs
   contents: read  # This is required for actions/checkout
   id-token: write  # Access the Github JWT for AWS access
-
+  deployments: write
 jobs:
 
     plan:
